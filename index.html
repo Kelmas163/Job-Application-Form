@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Job Application Form</h1>
+    <form action="https://formspree.io/f/xanlvqro" for="job-application" class="form">
+      <fieldset class="personal-details">
+        <legend>Personal Details</legend>
+        <label>First Name:
+          <p></p>
+          <input type="text" id="name" class="text" required class="text" placeholder="Type your firstname"> 
+        </label>   
+        <p></p>
+        <Label>Surname:
+          <p></p>
+          <input type="text" id="name" class="text" required class="text" placeholder="Type your surname">
+        </label>
+        <p></p>
+        <label>Email:
+          <p></p>
+          <input type="email" id="email" class="text"  placeholder="Ex.name@gmail.com" required class="text">
+        </label>  
+      </fieldset>   
+      <fieldset class="business-details">  
+        <legend>Business Details</legend>
+        <label>Job Position:</label>
+        <p></p>
+        <select id="position" name="position" required class="text">
+          <option value="">Select Job Position</option>
+          <option value="Software-Engineer">Software Engineer</option>
+          <option value="Web-Developer">Web Developer</option>
+          <option value="Data-Analyst">Data Analyst</option>
+          <option value="product-manager">Product Manager</option>
+          <option value="UI/UX-designer">UI/UX Designer</option>
+        </select> 
+        <p></p>
+        <label>Job Level:</label>
+        <p></p>
+        <select id="level" name="level" required class="text">
+          <option value="">Select Job Level</option>
+          <option value="first-job">First Job</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="experienced">Experienced</option>
+        </select>
+      </fieldset>
+      <fieldset class="radio-group">
+        <legend>Availability:</legend>
+        <label>
+          <input type="radio" name="availability" value="part-time">
+          Part-time
+        </label>  
+        <label>
+          <input type="radio" name="availability" value="full-time"> 
+          Full-time 
+        </label>
+        <p></p> 
+      </fieldset>
+      <p></p>
+      <fieldset class="radio-class">
+        <legend>Salary:</legend>
+        <label>
+          <input type="radio" name="salary" value="month">
+          100-1000 USD/Month
+        </label>
+        <label> 
+          <input type="radio" name="salary" value="year">
+          1000-10,000 USD/Year
+        </label>  
+      </fieldset> 
+        <label>Why do you want this Job?</label>
+        <p></p>  
+        <textarea id="message" name="message" class="text" rows="5" cols="20" placeholder="Write what motivates you" required></textarea> 
+        <p></p>  
+      <button type="submit">Submit form</button>  
+    </form>    
+  </div>      
+</body>
+</html>
